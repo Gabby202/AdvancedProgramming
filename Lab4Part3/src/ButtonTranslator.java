@@ -2,22 +2,34 @@ import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Calendar;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+
 public class ButtonTranslator extends JFrame implements ActionListener{
 
+	
+	
 	public ButtonTranslator() {
 		Container c = getContentPane();
 		c.setLayout(new GridLayout(2,2));
 		
-		JButton b1 = new JButton("Translate To French");
-		JButton b2 = new JButton("One");
-		JButton b3 = new JButton("Two");
-		JButton b4 = new JButton("Three");
+		Locale loc = new Locale("fr", "FR");
 		
-		c.add(b1);
+		ResourceBundle res = ResourceBundle.getBundle("resource.ProgramResource_fr", loc);
+		
+		
+		
+		JButton translateButton = new JButton(res.getString("Translate To French"));
+		JButton b2 = new JButton((String)res.getString("One"));
+		JButton b3 = new JButton((String)res.getString("Two"));
+		JButton b4 = new JButton((String)res.getString("Three"));
+		
+		c.add(translateButton);
 		c.add(b2);
 		c.add(b3);
 		c.add(b4);

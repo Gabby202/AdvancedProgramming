@@ -1,0 +1,6 @@
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at Revision1.main(Revision1.java:12)
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at Revision1.main(Revision1.java:12)
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at Revision1.main(Revision1.java:12)
