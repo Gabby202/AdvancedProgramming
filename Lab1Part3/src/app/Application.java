@@ -1,9 +1,9 @@
 /**
  * 
  */
-package application;
+package app;
 
-import mathematics.MathHelper;
+import math.MathHelper;
 
 /**
  * @author Gavi

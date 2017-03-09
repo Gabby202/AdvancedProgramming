@@ -1,7 +1,7 @@
 /**
  * 
  */
-package mathematics;
+package math;
 
 /**
  * @author Gavi
