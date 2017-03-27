@@ -7,6 +7,8 @@ public class TestDeclaringExceptions {
 		String s = "Hello";
 		reverseString(null);
 		
+		//this method required a try/catch because IOException is
+		//a "checked" exception.
 		try {
 			openFile();
 		} catch (IOException e) {

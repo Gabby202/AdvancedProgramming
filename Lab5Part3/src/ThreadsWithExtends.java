@@ -5,7 +5,6 @@ public class ThreadsWithExtends extends Thread {
 
 	public static synchronized void print() {
 		System.out.println(Thread.currentThread().getName() + " " + "\n" + s[0] + "\n" + s[1] + "\n" + s[2]);
-
 	}
 
 	public void run() {

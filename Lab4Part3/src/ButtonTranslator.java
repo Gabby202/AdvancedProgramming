@@ -20,7 +20,7 @@ public class ButtonTranslator extends JFrame implements ActionListener{
 		
 		Locale loc = new Locale("fr", "FR");
 		
-		ResourceBundle res = ResourceBundle.getBundle("resource.ProgramResource_fr", loc);
+		ResourceBundle res = ResourceBundle.getBundle("resource.ProgramResource", loc);
 		
 		
 		
