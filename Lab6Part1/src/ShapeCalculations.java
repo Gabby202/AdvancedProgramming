@@ -23,7 +23,7 @@ public final class ShapeCalculations {
 
 		double area = 4 * PI * (Math.pow(r, 2));
 
-		return 0;
+		return area;
 	}
 
 }

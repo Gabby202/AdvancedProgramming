@@ -4,7 +4,7 @@ public class CardTest {
 
 	public static void main(String[] args) {
 		
-		Vector v = new Vector<>();
+		Vector<Object> v = new Vector<>();
 		
 		CreditCard cc1 = new CreditCard("Gabby");
 		CreditCard cc2 = new CreditCard("Gabby", 123);
