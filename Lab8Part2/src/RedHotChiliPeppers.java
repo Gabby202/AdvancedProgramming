@@ -1,8 +1,11 @@
 
 public class RedHotChiliPeppers extends MusicArtists {
 	
-	public RedHotChiliPeppers(String album) {
+	private int year;
+	
+	public RedHotChiliPeppers(String album, int year) {
 		this.album = album;
+		this.year = year;
 	}
 
 
@@ -13,5 +16,15 @@ public class RedHotChiliPeppers extends MusicArtists {
 		String formed = "Formed in 1980's";
 		
 		return desc + "\n" + members + "\n" + formed  + "\n" + album + "\n";
+	}
+
+
+	public int getYear() {
+		return year;
+	}
+
+
+	public void setYear(int year) {
+		this.year = year;
 	}
 }

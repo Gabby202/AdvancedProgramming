@@ -27,4 +27,10 @@ public class ArtistVector {
 	public Vector getArtists () {
 		return artists;
 	}
+
+	public void addToList(MusicArtists a1, MusicArtists a2, MusicArtists a3, MusicArtists a4, MusicArtists a5,
+			MusicArtists a6, MusicArtists a7, MusicArtists a8, MusicArtists a9, MusicArtists a10) {
+		// TODO Auto-generated method stub
+		
+	}
 }
