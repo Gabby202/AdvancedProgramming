@@ -14,7 +14,7 @@ public class TestFullHeirarchy {
 		devices.addToList(computer, laptopComputer, mobilePhone, walkieTalkie);
 		Vector deviceList = devices.getDevices();
 
-		for (int i = 0; i < deviceList.size(); i++) {
+		/*	for (int i = 0; i < deviceList.size(); i++) {
 			Object currDev = new Object();
 			currDev = deviceList.elementAt(i);
 			
@@ -23,11 +23,22 @@ public class TestFullHeirarchy {
 			+ ((Computer) currDev).getSpeed() + "GHZ " 
 			+ ((Computer) currDev).getMemory() + "GB " + 
 			((Computer) currDev).getSize() + "Inches " 
-		//	((MobilePhone) currDev).getNetworkName() + 
-		//	((WalkieTalkie) currDev).getRangeInKm());
 			);
-		}
-
+			}*/
+		
+		
+		System.out.println(((ElectronicDevice) deviceList.elementAt(0)).getManufacturer() + " " + ((Computer) deviceList.elementAt(0)).getSpeed() + " " +
+		((Computer) deviceList.elementAt(0)).getMemory() + " " + ((Computer) deviceList.elementAt(0)).getSize());
+		
+		System.out.println(((ElectronicDevice) deviceList.elementAt(1)).getManufacturer() + " " + ((Computer) deviceList.elementAt(1)).getSpeed() + " " +
+		((Computer) deviceList.elementAt(1)).getMemory() + " " + ((Computer) deviceList.elementAt(1)).getSize());
+		
+		System.out.println(((MobilePhone) deviceList.elementAt(2)).getNetworkName() + " " + ((ElectronicDevice) deviceList.elementAt(2)).getManufacturer());
+		
+		System.out.println(((ElectronicDevice) deviceList.elementAt(3)).getManufacturer() + " " + ((WalkieTalkie) deviceList.elementAt(3)).getRangeInKm());
+			
 	}
+
+
 
 }

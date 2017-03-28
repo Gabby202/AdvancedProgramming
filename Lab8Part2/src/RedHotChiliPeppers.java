@@ -12,6 +12,6 @@ public class RedHotChiliPeppers extends MusicArtists {
 		String members = "4 members";
 		String formed = "Formed in 1980's";
 		
-		return desc + "\n" + members + "\n" + formed;
+		return desc + "\n" + members + "\n" + formed  + "\n" + album + "\n";
 	}
 }

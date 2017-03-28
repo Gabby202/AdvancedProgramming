@@ -12,6 +12,6 @@ public class Gorrilaz extends MusicArtists {
 		String members = "4 members";
 		String formed = "Formed in 2000's";
 		
-		return desc + "\n" + members + "\n" + formed;
+		return desc + "\n" + members + "\n" + formed  + "\n" + album + "\n";
 	}
 }

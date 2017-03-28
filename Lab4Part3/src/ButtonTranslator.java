@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-
+import resource.*;
 
 public class ButtonTranslator extends JFrame implements ActionListener{
 
