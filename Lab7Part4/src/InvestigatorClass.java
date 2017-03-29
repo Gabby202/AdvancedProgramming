@@ -22,7 +22,7 @@ public class InvestigatorClass {
 			System.out.println(methods[i].getReturnType());
 			System.out.println(methods[i].getModifiers());
 			System.out.println(methods[i].getReturnType());
-			System.out.println(methods[i].getParameterTypes().toString());
+			System.out.println(methods[i].getParameterTypes()[0].getName());
 
 			
 			try {
@@ -37,7 +37,7 @@ public class InvestigatorClass {
 		for(int i = 0; i < fields.length; i++) {
 			
 			System.out.println(fields[i].getName());
-			System.out.println(fields[i].getType().toString());
+			System.out.println(fields[i].getType());
 			System.out.println(" ");
 		}
 		

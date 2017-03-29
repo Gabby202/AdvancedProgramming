@@ -37,6 +37,7 @@ public class TestFullHeirarchy {
 		
 		System.out.println(((ElectronicDevice) deviceList.elementAt(3)).getManufacturer() + " " + ((WalkieTalkie) deviceList.elementAt(3)).getRangeInKm());
 			
+		System.out.println("My little test " + deviceList.elementAt(0));
 	}
 
 

@@ -12,6 +12,7 @@ public class FormFrame extends JFrame{
 	JButton button;
 	JTextField field;
 	private RegisterPanel panel;
+	static FormFrame frame;
 
 	public FormFrame() {
 		Container c = getContentPane();
@@ -26,28 +27,19 @@ public class FormFrame extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		new FormFrame();
+		frame = new FormFrame();
 	}
 	
 	class RegisterPanel extends JPanel{
 		
 		public RegisterPanel() {
-			JTextField field = new JTextField(16);
+			field = new JTextField(16);
 	
 			add(field);
 			button = new JButton("Submit");
-			button.addActionListener(new SubmitResponder() {
+			button.addActionListener(new SubmitResponder());
 				
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					if(e.getSource() == button) {
-						
-						field.setText("Submitted!");
-						field.setEditable(false);
-						FormFrame.this.setTitle("Submitted!");
-					}
-				}
-			});
+				
 			add(button);
 		}
 		
@@ -61,8 +53,12 @@ public class FormFrame extends JFrame{
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			
-			
+			if(e.getSource() == button) {
+				
+				frame.field.setText("Submitted!");
+				frame.field.setEditable(false);
+				FormFrame.this.setTitle("Submitted!");
+			}
 		}
 		
 	}

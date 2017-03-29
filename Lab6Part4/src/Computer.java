@@ -39,7 +39,11 @@ public  class Computer extends ElectronicDevice{
 		this.size = size;
 	}
 	
-
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString() + " " + getMemory() + " " + getSize() + " " + getSpeed();
+	}
 	
 
 }
